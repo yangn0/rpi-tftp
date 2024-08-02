@@ -1,0 +1,27 @@
+arm_64bit=1
+
+kernel=kernel8.img
+
+enable_gic=1
+
+# UART0 (GPIO14, TXD) 使用UART1要注释掉这个
+dtoverlay=disable-bt
+
+# UART1 (GPIO14, TXD) mini-uart
+# enable_uart=1
+
+# arm_freq=1500
+# gpu_freq=750
+core_freq=500
+# core_freq_min=500
+
+# hdmi_group=1
+# hdmi_mode=16
+
+# Disable pull downs
+# gpio=22-27=np
+
+# Enable jtag pins (i.e. GPIO22-GPIO27)
+# enable_jtag_gpio=1
+
+# gpio=0-3=pd
